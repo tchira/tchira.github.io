@@ -30,7 +30,7 @@ define([
             });
             $('#family-but').on('click', function () {
                 $('#map').empty();
-                cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/3beee460-fe5a-11e5-b0a3-0e674067d321/viz.json',visOptions);
+                cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/69c6c832-fe80-11e5-889a-0ecd1babdde5/viz.json',visOptions);
             });
             $('#parks-but').on('click', function () {
                 $('#map').empty();
