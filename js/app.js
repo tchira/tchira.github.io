@@ -22,7 +22,7 @@ define([
             $(this).toggleClass('active');
             event.stopPropagation();
         });
-        cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/69c6c832-fe80-11e5-889a-0ecd1babdde5/viz.json',visOptions);
+        cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/48dd5598-fe83-11e5-9557-0ea31932ec1d/viz.json',visOptions);
         window.onload = function () {
             $('#fun-but').on('click', function () {
                 $('#map').empty();
@@ -30,7 +30,7 @@ define([
             });
             $('#family-but').on('click', function () {
                 $('#map').empty();
-                cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/69c6c832-fe80-11e5-889a-0ecd1babdde5/viz.json',visOptions);
+                cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/48dd5598-fe83-11e5-9557-0ea31932ec1d/viz.json',visOptions);
             });
             $('#parks-but').on('click', function () {
                 $('#map').empty();
