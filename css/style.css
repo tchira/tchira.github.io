@@ -1,0 +1,24 @@
+
+/* =============================================================================
+   Primary styles
+   Author: 
+   ========================================================================== */
+body {
+  background: #ebebeb;
+}
+
+#map {
+  width: 100vw;
+  height:100vh;
+  background: #fff;
+}
+
+#vis-controls{
+  height:auto;
+  width:auto;
+  position:absolute;
+  right:20px;
+  top:20%;
+  background-color: #ebebeb;
+}
+
