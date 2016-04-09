@@ -1,16 +1,20 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-	<link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/leaflet.css" />
-    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css"/>
     <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
     <script data-main="js/main" src="js/libs/require/require.js"></script>
 </head>
@@ -18,12 +22,20 @@
 <div id="map">
 </div>
 <div id="vis-controls">
-    <div class="btn-group-vertical" role="group" aria-label="...">
-        <button type="button" id="family-but" class="">Family friendliness</button>
-        <button type="button" id="fun-but" class="btn ">Entertainment</button>
-        <button type="button" id="parking-but" class="btn">Parking</button>
-        <button type="button" id="all-but" class="btn">All</button>
+    <div id="vis-wrapper" class="well" style="padding:8px">
+        <label>Indexes</label>
+        <div class="btn-group-vertical" role="group" aria-label="...">
+            <button type="button" id="family-but" class="btn vis-control active">Family friendliness</button>
+            <button type="button" id="pub-but" class="btn vis-control">Entertainment proximity</button>
+            <button type="button" id="parks-but" class="btn vis-control">Parks proximity</button>
+            <button type="button" id="pollution-but" class="btn vis-control">Pollution</button>
+            <button type="button" id="school-but" class="btn vis-control">School proximity</button>
+            <button type="button" id="donate-but" class="btn btn-default">Support this project</button>
+        </div>
+
     </div>
+
+
 </div>
 </body>
 </html>

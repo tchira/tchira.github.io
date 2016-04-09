@@ -17,20 +17,34 @@ define([
             share: false,
             center:[48.1441,17.1462]
         };
+       $('.vis-control').on('click', function(event){
+            $('.active').not($(this)).removeClass('active');
+            $(this).toggleClass('active');
+            event.stopPropagation();
+        });
         cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/3beee460-fe5a-11e5-b0a3-0e674067d321/viz.json',visOptions);
         window.onload = function () {
             $('#fun-but').on('click', function () {
                 $('#map').empty();
-                cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/3beee460-fe5a-11e5-b0a3-0e674067d321/viz.json',visOptions);
+                cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/1814692e-fe74-11e5-8eca-0ecd1babdde5/viz.json',visOptions);
             });
             $('#family-but').on('click', function () {
                 $('#map').empty();
                 cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/3beee460-fe5a-11e5-b0a3-0e674067d321/viz.json',visOptions);
             });
-            $('#parking-but').on('click', function () {
+            $('#parks-but').on('click', function () {
                 $('#map').empty();
-                cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/3c4307ac-fe64-11e5-a29a-0ecd1babdde5/viz.json',visOptions);
+                cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/c1b62b40-fe72-11e5-a981-0e5db1731f59/viz.json',visOptions);
             });
+            $('#pollution-but').on('click', function () {
+                $('#map').empty();
+                cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/87be4e60-fe75-11e5-9557-0ea31932ec1d/viz.json',visOptions);
+            });
+            $('#school-but').on('click', function () {
+                $('#map').empty();
+                cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/80aad60e-fe73-11e5-9e92-0e5db1731f59/viz.json',visOptions);
+            });
+
 
         }
     }

@@ -17,7 +17,13 @@ body {
   height:auto;
   width:auto;
   position:absolute;
-  right:20px;
-  top:20%;
-  background-color: #ebebeb;
+  right:10px;
+  top:10%;
+  background-color: transparent;
 }
+
+#donate-but{
+  margin-top:20px;
+  width:100%;
+}
+
