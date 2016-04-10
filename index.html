@@ -12,6 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/leaflet.css"/>
     <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css"/>
@@ -21,6 +22,14 @@
 <body>
 <div id="map">
 </div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div id="vis-controls">
     <div id="vis-wrapper" class="well" style="padding:8px">
         <label>Indexes</label>
@@ -32,11 +41,10 @@
             <button type="button" id="school-but" class="btn vis-control">School proximity</button>
             <button type="button" id="donate-but" class="btn btn-default" onclick="ga('send', 'event', 'metrics', 'donated');">Support this project</button>
         </div>
-
     </div>
-
-
 </div>
+
+<div class="fb-like" data-href="https://www.facebook.com/urbio.co/" data-width="150px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 
 </body>
 <script>
