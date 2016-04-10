@@ -12,7 +12,7 @@ define([
             '*actions': 'defaultAction'
         },
         defaultAction: function () {
-            this.navigate('visualize/cluj',{trigger:true});
+            this.navigate('visualize/cluj', {trigger: true});
         },
         visualize: function (city) {
             var visOptions = {
@@ -28,39 +28,43 @@ define([
                 scrollwheel: true,
                 search: false,
                 share: false,
-                center: [46.7691,23.6058]
+                center: [46.7691, 23.6058]
             };
 
             $('#map').empty();
             switch (city) {
                 case 'cluj':
                     $('#map').empty();
-                    cartodb.createVis('map', 'https://bratuionutz.cartodb.com/api/v2/viz/9767106c-fef3-11e5-a915-0e787de82d45/viz.json', visOptionsC);
+                    try {
+                        cartodb.createVis('map', 'https://bratuionutz.cartodb.com/api/v2/viz/2d38895e-ff03-11e5-bd91-0e31c9be1b51/viz.json', visOptionsC);
+                    } catch (ex) {
+                        console.log(ex);
+                    }
 
                     $('#fun-but').off('click');
                     $('#fun-but').on('click', function () {
                         $('#map').empty();
-                        cartodb.createVis('map', 'https://bratuionutz.cartodb.com/api/v2/viz/9767106c-fef3-11e5-a915-0e787de82d45/viz.json', visOptionsC);
+                        cartodb.createVis('map', 'https://bratuionutz.cartodb.com/api/v2/viz/69e63e06-ff02-11e5-b4f2-0e5db1731f59/viz.json', visOptionsC);
                     });
                     $('#family-but').off('click');
                     $('#family-but').on('click', function () {
                         $('#map').empty();
-                        cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/69c6c832-fe80-11e5-889a-0ecd1babdde5/viz.json', visOptionsC);
+                        cartodb.createVis('map', 'https://bratuionutz.cartodb.com/api/v2/viz/2d38895e-ff03-11e5-bd91-0e31c9be1b51/viz.json', visOptionsC);
                     });
                     $('#parks-but').off('click');
                     $('#parks-but').on('click', function () {
                         $('#map').empty();
-                        cartodb.createVis('map', 'https://bratuionutz.cartodb.com/api/v2/viz/8daa94d2-fef2-11e5-bd91-0e31c9be1b51/viz.json', visOptionsC);
+                        cartodb.createVis('map', 'https://bratuionutz.cartodb.com/api/v2/viz/e0ecdb8c-ff01-11e5-8b83-0e3ff518bd15/viz.json', visOptionsC);
                     });
                     $('#pollution-but').off('click');
                     $('#pollution-but').on('click', function () {
                         $('#map').empty();
-                        cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/87be4e60-fe75-11e5-9557-0ea31932ec1d/viz.json', visOptionsC);
+                        cartodb.createVis('map', 'https://bratuionutz.cartodb.com/api/v2/viz/629db008-ff01-11e5-a981-0e5db1731f59/viz.json', visOptionsC);
                     });
                     $('#school-but').off('click');
                     $('#school-but').on('click', function () {
                         $('#map').empty();
-                        cartodb.createVis('map', 'https://bratuionutz.cartodb.com/api/v2/viz/10588c0c-fef5-11e5-a29a-0ecd1babdde5/viz.json', visOptionsC);
+                        cartodb.createVis('map', 'https://bratuionutz.cartodb.com/api/v2/viz/26548396-ff02-11e5-a981-0e5db1731f59/viz.json', visOptionsC);
                     });
 
                     $('.vis-control').on('click', function (event) {
@@ -73,8 +77,11 @@ define([
 
                 case 'bratislava':
                     $('#map').empty();
-                    cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/69c6c832-fe80-11e5-889a-0ecd1babdde5/viz.json', visOptions);
-
+                    try {
+                        cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/69c6c832-fe80-11e5-889a-0ecd1babdde5/viz.json', visOptions);
+                    } catch (ex) {
+                        console.log(ex);
+                    }
                     $('#fun-but').off('click');
                     $('#fun-but').on('click', function () {
                         $('#map').empty();
