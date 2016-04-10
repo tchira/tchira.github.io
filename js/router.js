@@ -24,18 +24,13 @@ define([
             };
 
             var visOptionsC = {
-                zoom: 14,
+                zoom: 13,
                 scrollwheel: true,
                 search: false,
                 share: false,
-                center: [46.7501, 23.6037]
+                center: [46.7691,23.6058]
             };
 
-            $('.vis-control').on('click', function (event) {
-                $('.active').not($(this)).removeClass('active');
-                $(this).toggleClass('active');
-                event.stopPropagation();
-            });
             $('#map').empty();
             switch (city) {
                 case 'cluj':
@@ -66,6 +61,12 @@ define([
                     $('#school-but').on('click', function () {
                         $('#map').empty();
                         cartodb.createVis('map', 'https://bratuionutz.cartodb.com/api/v2/viz/10588c0c-fef5-11e5-a29a-0ecd1babdde5/viz.json', visOptionsC);
+                    });
+
+                    $('.vis-control').on('click', function (event) {
+                        $('.active').not($(this)).removeClass('active');
+                        $(this).toggleClass('active');
+                        event.stopPropagation();
                     });
                     break;
 
@@ -98,6 +99,12 @@ define([
                     $('#school-but').on('click', function () {
                         $('#map').empty();
                         cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/80aad60e-fe73-11e5-9e92-0e5db1731f59/viz.json', visOptions);
+                    });
+
+                    $('.vis-control').on('click', function (event) {
+                        $('.active').not($(this)).removeClass('active');
+                        $(this).toggleClass('active');
+                        event.stopPropagation();
                     });
                     break;
             }
