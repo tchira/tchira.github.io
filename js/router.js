@@ -30,7 +30,10 @@ define([
                 shareable: false,
                 center: [46.7691, 23.6058]
             };
-
+            $('#donate-but').on('click',function(){
+                ga('send', 'event', 'metrics', 'donated');
+                alert("Thanks!");
+            });
             $('#map').empty();
             switch (city) {
                 case 'cluj':
