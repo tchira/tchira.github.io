@@ -23,9 +23,9 @@ body {
 }
 
 .fb-like {
-  width: 50%;
-  margin: 0 auto;
-  top:5px;
+ position:absolute;
+  bottom:10px;
+  left:80px;
 }
 
 #donate-but{

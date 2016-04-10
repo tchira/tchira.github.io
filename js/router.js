@@ -19,7 +19,7 @@ define([
                 zoom: 12,
                 scrollwheel: true,
                 search: false,
-                share: false,
+                shareable: false,
                 center: [48.1441, 17.1462]
             };
 
@@ -27,7 +27,7 @@ define([
                 zoom: 13,
                 scrollwheel: true,
                 search: false,
-                share: false,
+                shareable: false,
                 center: [46.7691, 23.6058]
             };
 
