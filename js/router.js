@@ -77,6 +77,9 @@ define([
 
                 case 'bratislava':
                     $('#map').empty();
+                    $('#family-but').addClass('disabled');
+                    $('#family-but').addClass('disabled');
+
                     try {
                         cartodb.createVis('map', 'https://blankearth.cartodb.com/api/v2/viz/69c6c832-fe80-11e5-889a-0ecd1babdde5/viz.json', visOptions);
                     } catch (ex) {

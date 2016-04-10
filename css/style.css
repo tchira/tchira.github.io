@@ -22,6 +22,12 @@ body {
   background-color: transparent;
 }
 
+.fb-like {
+  width: 50%;
+  margin: 0 auto;
+  top:5px;
+}
+
 #donate-but{
   margin-top:20px;
   width:100%;
