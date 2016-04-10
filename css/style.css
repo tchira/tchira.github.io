@@ -5,9 +5,11 @@
    ========================================================================== */
 body {
   background: #ebebeb;
+  position:fixed;
 }
 
 #map {
+  position:absolute;
   width: 100vw;
   height:100vh;
   background: #fff;
@@ -23,7 +25,8 @@ body {
 }
 
 .fb-like {
- position:absolute;
+  position:absolute;
+  z-index:2;
   bottom:10px;
   left:80px;
 }
