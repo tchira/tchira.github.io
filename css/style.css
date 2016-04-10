@@ -23,7 +23,7 @@ body {
 }
 
 .fb-like {
- position:absolute;
+ position:fixed;
   bottom:10px;
   left:80px;
 }
