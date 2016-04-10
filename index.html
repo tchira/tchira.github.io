@@ -12,7 +12,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet'
+          type='text/css'>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/leaflet.css"/>
     <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css"/>
@@ -20,40 +21,65 @@
     <script data-main="js/main" src="js/libs/require/require.js"></script>
 </head>
 <body>
-<div class="fb-like" data-href="https://www.facebook.com/urbio.co/" data-width="150px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 <div id="map">
 </div>
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script>(function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
+    js = d.createElement(s);
+    js.id = id;
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <div id="vis-controls">
     <div id="vis-wrapper" class="well" style="padding:8px">
         <div class="btn-group-vertical" role="group" aria-label="...">
-            <button type="button" data-toggle="tooltip" title="Indicates the number of pubs & clubs in walking distance. Lower is better." id="fun-but" class="btn vis-control active">Nightlife</button>
-            <button type="button" data-toggle="tooltip" title="Indicates the number of parks in walking distance. Higher is better" id="parks-but" class="btn vis-control">Green space</button>
-            <button type="button" data-toggle="tooltip" title="Indicates proximity to factories & other pollution generators. Lower is better" id="pollution-but" class="btn vis-control">Pollution</button>
-            <button type="button" data-toggle="tooltip" title="Indicates proximity to daycare centers, kindergardens and schools. Higher is better" id="school-but" class="btn vis-control">Education</button>
-            <button type="button" data-toggle="tooltip" title="Aggregated index taking into account proximity to children friendly parks, educational facilities,distance from noise and pollution centres. Higher is better" id="family-but" class="btn vis-control">Family friendliness</button>
-            <button type="button" id="donate-but" class="btn btn-default" onclick="ga('send', 'event', 'metrics', 'donated');">Support this project</button>
+            <button type="button" data-toggle="tooltip"
+                    title="Indicates the number of pubs & clubs in walking distance. Lower is better." id="fun-but"
+                    class="btn vis-control active">Nightlife
+            </button>
+            <button type="button" data-toggle="tooltip"
+                    title="Indicates the number of parks in walking distance. Higher is better" id="parks-but"
+                    class="btn vis-control">Green space
+            </button>
+            <button type="button" data-toggle="tooltip"
+                    title="Indicates proximity to factories & other pollution generators. Lower is better"
+                    id="pollution-but" class="btn vis-control">Pollution
+            </button>
+            <button type="button" data-toggle="tooltip"
+                    title="Indicates proximity to daycare centers, kindergardens and schools. Higher is better"
+                    id="school-but" class="btn vis-control">Education
+            </button>
+            <button type="button" data-toggle="tooltip"
+                    title="Aggregated index taking into account proximity to children friendly parks, educational facilities,distance from noise and pollution centres. Higher is better"
+                    id="family-but" class="btn vis-control">Family friendliness
+            </button>
+            <button type="button" id="donate-but" class="btn btn-default"
+                    onclick="ga('send', 'event', 'metrics', 'donated');">Support this project
+            </button>
         </div>
     </div>
 </div>
-<div class="fb-like" data-href="https://www.facebook.com/urbio.co/" data-width="150px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+<div class="fb-like" data-href="https://www.facebook.com/urbio.co/" data-width="150px" data-layout="button_count"
+     data-action="like" data-show-faces="true" data-share="true"></div>
 
 </body>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-72515602-3', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-72515602-3', 'auto');
+    ga('send', 'pageview');
 
 </script>
 </html>
