@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/tchira.github.io/static/css/main.10964bd7.chunk.css",
+    "main.js": "/tchira.github.io/static/js/main.6d530606.chunk.js",
+    "main.js.map": "/tchira.github.io/static/js/main.6d530606.chunk.js.map",
+    "runtime-main.js": "/tchira.github.io/static/js/runtime-main.bba15515.js",
+    "runtime-main.js.map": "/tchira.github.io/static/js/runtime-main.bba15515.js.map",
+    "static/css/2.4f71260a.chunk.css": "/tchira.github.io/static/css/2.4f71260a.chunk.css",
+    "static/js/2.87c6b43a.chunk.js": "/tchira.github.io/static/js/2.87c6b43a.chunk.js",
+    "static/js/2.87c6b43a.chunk.js.map": "/tchira.github.io/static/js/2.87c6b43a.chunk.js.map",
+    "index.html": "/tchira.github.io/index.html",
+    "static/css/2.4f71260a.chunk.css.map": "/tchira.github.io/static/css/2.4f71260a.chunk.css.map",
+    "static/css/main.10964bd7.chunk.css.map": "/tchira.github.io/static/css/main.10964bd7.chunk.css.map",
+    "static/js/2.87c6b43a.chunk.js.LICENSE.txt": "/tchira.github.io/static/js/2.87c6b43a.chunk.js.LICENSE.txt",
+    "static/js/mapbox-gl-csp-worker.24c2c5be.worker.js": "/tchira.github.io/static/js/mapbox-gl-csp-worker.24c2c5be.worker.js",
+    "static/js/mapbox-gl-csp-worker.24c2c5be.worker.js.map": "/tchira.github.io/static/js/mapbox-gl-csp-worker.24c2c5be.worker.js.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bba15515.js",
+    "static/css/2.4f71260a.chunk.css",
+    "static/js/2.87c6b43a.chunk.js",
+    "static/css/main.10964bd7.chunk.css",
+    "static/js/main.6d530606.chunk.js"
+  ]
+}
