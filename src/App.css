@@ -28,11 +28,45 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.map-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.sidebar {
+  background-color: rgba(35, 55, 75, 0.9);
+  color: #ffffff;
+  padding: 6px 12px;
+  font: 15px/24px monospace;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  border-radius: 4px;
+}
+
+.coord-panel-container {
+  background-color: rgba(206, 199, 199,0.95);
+  z-index: 1;
+  position:absolute;
+  border-radius: 4px;
+  top: 50px;
+  bottom:30px;
+  left:0;
+  width: 300px;  
+  padding:15px;
+
+  margin: 12px;
+}
+
+.features-container {
+  background-color: rgba(168, 25, 25, 0.95);
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left:0;
 }
